@@ -7,6 +7,7 @@ gem 'rails', '3.2.13'
 
 group :production do
   gem 'pg'
+  gem 'newrelic_rpm'
 end
 
 group :development do
