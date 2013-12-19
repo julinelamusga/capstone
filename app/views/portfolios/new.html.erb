@@ -1,0 +1,7 @@
+<h1>Create a new portfolio</h1>
+
+<%= form_for [current_user, @portfolio] do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.submit "Create" %>
+<% end %>

@@ -1,0 +1,7 @@
+<h1><%= @user.email %></h1>
+<% if user_signed_in? and current_user == @user %>
+  <%= link_to "Create a portfolio", new_user_portfolio_path(current_user) %>
+<% end %>
+
+<h1>Portfolios</h1>
+<%= render(partial: "portfolios/portfolio", collection: @portfolios, locals: { user: @user }) || "No portfolios" %>

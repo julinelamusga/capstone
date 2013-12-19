@@ -1,0 +1,12 @@
+<h1>Add a masterpiece</h1>
+<%= form_for @masterpiece do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div>
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+  <%= f.submit "Upload" %>
+<% end %>
