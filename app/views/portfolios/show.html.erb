@@ -1,4 +1,7 @@
 <h1><%= @portfolio.title %> by <%= link_to @user.email, user_path(@user) %></h1>
 <% if user_signed_in? && current_user == @user %>
-  <%= link_to "Add a masterpiece", new_masterpiece_path %>
+  <%= link_to "Add a masterpiece", new_masterpiece_path(portfolio_id: @portfolio.id) %>
 <% end %>
+
+<h2>Masterpieces</h2>
+<%= render(@masterpieces) %>

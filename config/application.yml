@@ -1,0 +1,6 @@
+AWS_ACCESS_KEY_ID: AKIAI3ZENBEAAUAW7U6Q
+AWS_SECRET_ACCESS_KEY: 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
+development:
+  AWS_BUCKET: capstone-development
+production:
+  AWS_BUCKET: capstone-production
